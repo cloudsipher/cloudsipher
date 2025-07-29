@@ -1,21 +1,734 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Development</title>
-    <link rel="stylesheet" type="text/css" href="css/theme-styles.css">
-    <link rel="stylesheet" type="text/css" href="css/blocks.css">
-    <link rel="stylesheet" type="text/css" href="css/widgets.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Development - Cloudsipher</title>
+
+    <link rel="stylesheet" type="text/css" href="Autoscripts/html/css/theme-styles.css">
+    <link rel="stylesheet" type="text/css" href="Autoscripts/html/css/blocks.css">
+    <link rel="stylesheet" type="text/css" href="Autoscripts/html/css/widgets.css">
+    <link rel="stylesheet" type="text/css" href="Autoscripts/html/css/plugins/ion.rangeSlider.css">
+
+    <!--External fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+
+    <!-- Styles for Plugins -->
+    <link rel="stylesheet" type="text/css" href="Autoscripts/html/css/plugins/swiper.min.css">
 </head>
-<body>
-    <header> ... </header>
-    <main>
-        <section class="hero">
-            <h1>API Development</h1>
-            <p>Building scalable APIs that integrate seamlessly with your applications.</p>
-        </section>
-    </main>
-    <footer> ... </footer>
+
+<body class="crumina-grid">
+
+<!-- Header -->
+<header class="header header--menu-rounded header--blue-lighteen" id="site-header">
+    <div class="header-lines-decoration">
+        <span class="bg-secondary-color"></span>
+        <span class="bg-blue"></span>
+        <span class="bg-blue-light"></span>
+        <span class="bg-orange-light"></span>
+        <span class="bg-red"></span>
+        <span class="bg-green"></span>
+        <span class="bg-secondary-color"></span>
+    </div>
+
+    <div class="container">
+        <a href="#" id="top-bar-js" class="top-bar-link">
+            <svg class="cloudsipher-icon cloudsipher-icon-arrow-top">
+                <use xlink:href="#cloudsipher-icon-arrow-top"></use>
+            </svg>
+        </a>
+        <div class="header-content-wrapper">
+            <div class="site-logo">
+                <a href="Autoscripts/html/index.html" class="full-block"></a>
+                <img src="Autoscripts/html/img/logo.png" alt="Cloudsipher">
+                <div class="logo-text">
+                    <div class="logo-title">Cloudsipher</div>
+                    <div class="logo-sub-title">Innovate with us</div>
+                </div>
+            </div>
+
+            <nav id="primary-menu" class="primary-menu">
+                <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                    <span class="showhide-fix"></span>
+                    <span class="mob-menu--title">Menu</span>
+                    <span id="menu-icon-wrapper" class="menu-icon-wrapper">
+                        <svg width="1000px" height="1000px">
+                            <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                            <path id="pathE" d="M 300 500 L 700 500"></path>
+                            <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <ul class="primary-menu-menu">
+                    <li><a href="Autoscripts/html/index.html">Home</a></li>
+                    <li><a href="Autoscripts/html/02_company.html">Company</a></li>
+                    <li><a href="Autoscripts/html/03_products.html">Services</a></li>
+                    <li><a href="Autoscripts/html/18_contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="header-spacer"></div>
+
+<!-- Main Content -->
+<div class="content-wrapper">
+
+    <!-- Hero Section -->
+    <section class="crumina-module crumina-module-slider bg-primary-color bg-5 medium-padding120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-heading custom-color c-white align-center">
+                        <h6 class="heading-sup-title">Our Expertise</h6>
+                        <h1 class="heading-title">API Development Services</h1>
+                        <div class="heading-text">Building scalable, secure, and high-performance APIs that seamlessly integrate with your applications and drive digital transformation.</div>
+                    </div>
+                    
+                    <div class="align-center" style="margin-top: 40px;">
+                        <a href="#services" class="btn btn--green btn--with-shadow">
+                            Explore Our Services
+                        </a>
+                        <a href="#contact" class="btn btn-border btn--with-shadow c-white">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Boxes -->
+    <section class="medium-padding100" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 mb60">
+                    <div class="crumina-module crumina-heading align-center">
+                        <h6 class="heading-sup-title">What We Offer</h6>
+                        <h2 class="heading-title">Comprehensive API Solutions</h2>
+                        <div class="heading-text">From design to deployment, we provide end-to-end API development services that power modern applications.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-info-box info-box--standard-hover">
+                        <div class="info-box-image">
+                            <img class="cloudsipher-icon" src="Autoscripts/html/svg-icons/cloud-computing.svg" alt="REST APIs" style="height: 70px; width: 70px; fill: #0083ff;">
+                            <img class="cloud" src="Autoscripts/html/img/clouds8.png" alt="cloud">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="h5 info-box-title">RESTful API Development</a>
+                            <p class="info-box-text">Design and develop robust REST APIs following industry best practices with proper HTTP methods, status codes, and resource management.</p>
+                        </div>
+                        <a href="#" class="btn-next">
+                            <svg class="cloudsipher-icon icon-hover cloudsipher-icon-arrow-right-1">
+                                <use xlink:href="#cloudsipher-icon-arrow-right-1"></use>
+                            </svg>
+                            <svg class="cloudsipher-icon cloudsipher-icon-arrow-right1">
+                                <use xlink:href="#cloudsipher-icon-arrow-right1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-info-box info-box--standard-hover">
+                        <div class="info-box-image">
+                            <img class="cloudsipher-icon" src="Autoscripts/html/svg-icons/devices.svg" alt="GraphQL" style="height: 70px; width: 70px; fill: #0083ff;">
+                            <img class="cloud" src="Autoscripts/html/img/clouds9.png" alt="cloud">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="h5 info-box-title">GraphQL Implementation</a>
+                            <p class="info-box-text">Build flexible GraphQL APIs that allow clients to request exactly the data they need, reducing over-fetching and improving performance.</p>
+                        </div>
+                        <a href="#" class="btn-next">
+                            <svg class="cloudsipher-icon icon-hover cloudsipher-icon-arrow-right-1">
+                                <use xlink:href="#cloudsipher-icon-arrow-right-1"></use>
+                            </svg>
+                            <svg class="cloudsipher-icon cloudsipher-icon-arrow-right1">
+                                <use xlink:href="#cloudsipher-icon-arrow-right1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-info-box info-box--standard-hover">
+                        <div class="info-box-image">
+                            <img class="cloudsipher-icon" src="Autoscripts/html/svg-icons/settings%20(4).svg" alt="Microservices" style="height: 70px; width: 70px; fill: #0083ff;">
+                            <img class="cloud" src="Autoscripts/html/img/clouds10.png" alt="cloud">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="h5 info-box-title">Microservices Architecture</a>
+                            <p class="info-box-text">Design and implement microservices-based architectures for scalable, maintainable, and resilient distributed systems.</p>
+                        </div>
+                        <a href="#" class="btn-next">
+                            <svg class="cloudsipher-icon icon-hover cloudsipher-icon-arrow-right-1">
+                                <use xlink:href="#cloudsipher-icon-arrow-right-1"></use>
+                            </svg>
+                            <svg class="cloudsipher-icon cloudsipher-icon-arrow-right1">
+                                <use xlink:href="#cloudsipher-icon-arrow-right1"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features -->
+    <section class="bg-blue-lighteen background-contain bg-11 medium-padding100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-heading">
+                        <h6 class="heading-sup-title">Technical Excellence</h6>
+                        <h2 class="heading-title">API Development Features</h2>
+                        <p class="heading-text">Our APIs are built with modern technologies and best practices to ensure optimal performance, security, and scalability.</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="crumina-module crumina-info-box info-box--standard">
+                                <div class="info-box-image display-flex">
+                                    <svg class="cloudsipher-icon cloudsipher-icon-checked">
+                                        <use xlink:href="#cloudsipher-icon-checked"></use>
+                                    </svg>
+                                    <h6 class="info-box-title">Authentication & Security</h6>
+                                </div>
+                                <p class="info-box-text">OAuth 2.0, JWT tokens, API keys, and rate limiting for secure access control.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="crumina-module crumina-info-box info-box--standard">
+                                <div class="info-box-image display-flex">
+                                    <svg class="cloudsipher-icon cloudsipher-icon-checked">
+                                        <use xlink:href="#cloudsipher-icon-checked"></use>
+                                    </svg>
+                                    <h6 class="info-box-title">Auto Documentation</h6>
+                                </div>
+                                <p class="info-box-text">OpenAPI/Swagger specifications with interactive documentation for developers.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="crumina-module crumina-info-box info-box--standard">
+                                <div class="info-box-image display-flex">
+                                    <svg class="cloudsipher-icon cloudsipher-icon-checked">
+                                        <use xlink:href="#cloudsipher-icon-checked"></use>
+                                    </svg>
+                                    <h6 class="info-box-title">Monitoring & Analytics</h6>
+                                </div>
+                                <p class="info-box-text">Real-time monitoring, logging, and performance analytics for your APIs.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="crumina-module crumina-info-box info-box--standard">
+                                <div class="info-box-image display-flex">
+                                    <svg class="cloudsipher-icon cloudsipher-icon-checked">
+                                        <use xlink:href="#cloudsipher-icon-checked"></use>
+                                    </svg>
+                                    <h6 class="info-box-title">Versioning Strategy</h6>
+                                </div>
+                                <p class="info-box-text">Proper API versioning to maintain backward compatibility and smooth upgrades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-our-video">
+                        <div class="video-thumb">
+                            <img src="Autoscripts/html/img/video-thumb.png" alt="API Development Process">
+                            <a href="https://www.youtube.com/watch?v=wnJ6LuUFpMo" class="video-control js-popup-iframe">
+                                <img src="Autoscripts/html/img/play.png" alt="play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="medium-padding100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 mb60">
+                    <div class="crumina-module crumina-heading align-center">
+                        <h6 class="heading-sup-title">Our Process</h6>
+                        <h2 class="heading-title">API Development Workflow</h2>
+                        <div class="heading-text">We follow a structured approach to deliver high-quality APIs that meet your business requirements.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-info-box info-box--time-line">
+                        <div class="info-box-image bg-primary-color">
+                            <svg class="cloudsipher-icon" style="height: 40px; width: 40px; fill: white;">
+                                <use xlink:href="#cloudsipher-icon-flag-1"></use>
+                            </svg>
+                        </div>
+                        <div class="timeline-year">Step 1</div>
+                        <a href="#" class="h5 info-box-title">Planning & Design</a>
+                        <p class="info-box-text">Requirements analysis, API specification design, and architecture planning.</p>
+                        <svg class="time-line-arrow cloudsipher-icon">
+                            <use xlink:href="#cloudsipher-icon-arrow-right1"></use>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-info-box info-box--time-line">
+                        <div class="info-box-image bg-orange">
+                            <svg class="cloudsipher-icon" style="height: 40px; width: 40px; fill: white;">
+                                <use xlink:href="#cloudsipher-icon-edit"></use>
+                            </svg>
+                        </div>
+                        <div class="timeline-year">Step 2</div>
+                        <a href="#" class="h5 info-box-title">Development</a>
+                        <p class="info-box-text">Implementation of API endpoints, business logic, and data models.</p>
+                        <svg class="time-line-arrow cloudsipher-icon">
+                            <use xlink:href="#cloudsipher-icon-arrow-right1"></use>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-info-box info-box--time-line">
+                        <div class="info-box-image bg-red">
+                            <svg class="cloudsipher-icon" style="height: 40px; width: 40px; fill: white;">
+                                <use xlink:href="#cloudsipher-icon-checked"></use>
+                            </svg>
+                        </div>
+                        <div class="timeline-year">Step 3</div>
+                        <a href="#" class="h5 info-box-title">Testing</a>
+                        <p class="info-box-text">Comprehensive testing including unit, integration, and performance tests.</p>
+                        <svg class="time-line-arrow cloudsipher-icon">
+                            <use xlink:href="#cloudsipher-icon-arrow-right1"></use>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="crumina-module crumina-info-box info-box--time-line">
+                        <div class="info-box-image bg-green">
+                            <svg class="cloudsipher-icon" style="height: 40px; width: 40px; fill: white;">
+                                <use xlink:href="#cloudsipher-icon-expand"></use>
+                            </svg>
+                        </div>
+                        <div class="timeline-year">Step 4</div>
+                        <a href="#" class="h5 info-box-title">Deployment</a>
+                        <p class="info-box-text">Production deployment with monitoring, documentation, and support setup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="bg-secondary-color background-contain bg-10 medium-padding100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 mb60">
+                    <div class="crumina-module crumina-heading align-center">
+                        <h6 class="heading-sup-title c-yellow">Technologies</h6>
+                        <h2 class="heading-title c-white">Modern Tech Stack</h2>
+                        <div class="heading-text c-semitransparent-white">We leverage cutting-edge technologies to build robust and scalable APIs.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="counters">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="text-box">
+                            <h5 class="title c-white">Backend Technologies</h5>
+                            <ul>
+                                <li>Node.js & Express</li>
+                                <li>Python & Django/Flask</li>
+                                <li>Java & Spring Boot</li>
+                                <li>.NET Core</li>
+                                <li>Go & Gin</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="text-box">
+                            <h5 class="title c-white">Databases</h5>
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
+                                <li>Redis</li>
+                                <li>Elasticsearch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="text-box">
+                            <h5 class="title c-white">Cloud & DevOps</h5>
+                            <ul>
+                                <li>AWS / Azure / GCP</li>
+                                <li>Docker & Kubernetes</li>
+                                <li>CI/CD Pipelines</li>
+                                <li>API Gateways</li>
+                                <li>Load Balancers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="text-box">
+                            <h5 class="title c-white">Tools & Standards</h5>
+                            <ul>
+                                <li>OpenAPI/Swagger</li>
+                                <li>Postman/Insomnia</li>
+                                <li>GraphQL</li>
+                                <li>JWT & OAuth</li>
+                                <li>Monitoring Tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="background-contain bg-13 medium-padding100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 mb60">
+                    <div class="crumina-module crumina-heading align-center">
+                        <h6 class="heading-sup-title">Pricing Plans</h6>
+                        <h2 class="heading-title">API Development Packages</h2>
+                        <div class="heading-text">Choose the perfect plan for your API development needs.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pricing-wrap">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="crumina-module crumina-pricing-tables-item pricing-tables-item-standard">
+                            <div class="main-pricing-content">
+                                <h2 class="h1 rate">$<span class="price">2999</span></h2>
+                                <h5 class="pricing-title">Starter API</h5>
+                                <div class="pricing-line bg-green"></div>
+                                <p class="pricing-description">Perfect for small applications and MVP development.</p>
+                                <ul class="pricing-tables-position">
+                                    <li class="position-item">Up to 10 endpoints</li>
+                                    <li class="position-item">Basic authentication</li>
+                                    <li class="position-item">Documentation</li>
+                                    <li class="position-item">30 days support</li>
+                                </ul>
+                                <p class="sub-description">Ideal for startups and small projects.</p>
+                            </div>
+                            <div class="bg-pricing-content bg-green">
+                                <a href="#" class="h6 title">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="crumina-module crumina-pricing-tables-item pricing-tables-item-standard main-plan">
+                            <div class="main-pricing-content">
+                                <h2 class="h1 rate">$<span class="price">7999</span></h2>
+                                <h5 class="pricing-title">Professional API</h5>
+                                <div class="pricing-line bg-pamaranch"></div>
+                                <p class="pricing-description">Comprehensive solution for medium to large applications.</p>
+                                <ul class="pricing-tables-position">
+                                    <li class="position-item">Unlimited endpoints</li>
+                                    <li class="position-item">Advanced security</li>
+                                    <li class="position-item">Rate limiting</li>
+                                    <li class="position-item">Monitoring & analytics</li>
+                                    <li class="position-item">90 days support</li>
+                                </ul>
+                                <p class="sub-description">Best for growing businesses and enterprise apps.</p>
+                            </div>
+                            <div class="bg-pricing-content bg-pamaranch">
+                                <a href="#" class="h6 title">Most Popular</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="crumina-module crumina-pricing-tables-item pricing-tables-item-standard">
+                            <div class="main-pricing-content">
+                                <h2 class="h1 rate">$<span class="price">15999</span></h2>
+                                <h5 class="pricing-title">Enterprise API</h5>
+                                <div class="pricing-line bg-red"></div>
+                                <p class="pricing-description">Full-scale API ecosystem for enterprise applications.</p>
+                                <ul class="pricing-tables-position">
+                                    <li class="position-item">Microservices architecture</li>
+                                    <li class="position-item">API gateway setup</li>
+                                    <li class="position-item">Load balancing</li>
+                                    <li class="position-item">Custom integrations</li>
+                                    <li class="position-item">1 year support</li>
+                                </ul>
+                            </div>
+                            <div class="bg-pricing-content bg-red">
+                                <a href="#" class="h6 title">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="background-cover bg-blue-lighteen bg-12 align-center medium-padding120" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
+                    <div class="crumina-module crumina-heading">
+                        <h2 class="heading-title">Ready to Build Your <span class="c-primary">API</span>?</h2>
+                        <p class="heading-text">Let's discuss your project requirements and create a scalable API solution that drives your business forward.</p>
+                    </div>
+
+                    <a href="Autoscripts/html/18_contacts.html" class="btn btn--primary btn--with-shadow">
+                        Start Your Project
+                    </a>
+                    <a href="mailto:info@cloudsipher.com" class="btn btn--green btn--with-shadow">
+                        Get Free Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer" id="site-footer">
+    <div class="header-lines-decoration">
+        <span class="bg-secondary-color"></span>
+        <span class="bg-blue"></span>
+        <span class="bg-blue-light"></span>
+        <span class="bg-orange-light"></span>
+        <span class="bg-red"></span>
+        <span class="bg-green"></span>
+        <span class="bg-secondary-color"></span>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="widget w-info">
+                    <div class="site-logo">
+                        <a href="Autoscripts/html/index.html" class="full-block"></a>
+                        <div class="logo-text">
+                            <div class="logo-title">Cloudsipher</div>
+                            <div class="logo-sub-title">Innovate with us</div>
+                        </div>
+                    </div>
+
+                    <p>We specialize in creating robust, scalable APIs that power modern applications and drive digital transformation for businesses of all sizes.</p>
+
+                    <a href="Autoscripts/html/02_company.html" class="learn-more">Learn more about Cloudsipher</a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-12 col-sm-offset-0 col-xs-12">
+                <div class="widget w-list">
+                    <h5 class="widget-title">Services</h5>
+                    <ul class="list list--primary">
+                        <li>
+                            <a href="api_development.html">API Development</a>
+                            <svg class="cloudsipher-icon cloudsipher-icon-arrow-right">
+                                <use xlink:href="#cloudsipher-icon-arrow-right"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <a href="database_solutions.html">Database Solutions</a>
+                            <svg class="cloudsipher-icon cloudsipher-icon-arrow-right">
+                                <use xlink:href="#cloudsipher-icon-arrow-right"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <a href="cloud_migration.html">Cloud Migration</a>
+                            <svg class="cloudsipher-icon cloudsipher-icon-arrow-right">
+                                <use xlink:href="#cloudsipher-icon-arrow-right"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-12 col-sm-offset-0 col-xs-12">
+                <div class="widget w-contacts">
+                    <h5 class="widget-title">Contact with us</h5>
+                    <div class="contact-item display-flex">
+                        <svg class="cloudsipher-icon cloudsipher-icon-telephone-keypad-with-ten-keys">
+                            <use xlink:href="#cloudsipher-icon-telephone-keypad-with-ten-keys"></use>
+                        </svg>
+                        <span class="info">8 800 567.890.11</span>
+                    </div>
+                    <div class="contact-item display-flex">
+                        <svg class="cloudsipher-icon cloudsipher-icon-message-closed-envelope-1">
+                            <use xlink:href="#cloudsipher-icon-message-closed-envelope-1"></use>
+                        </svg>
+                        <span class="info">support@cloudsipher.com</span>
+                    </div>
+
+                    <a href="Autoscripts/html/18_contacts.html" class="btn btn--green full-width btn--with-shadow">
+                        Send a Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <a class="back-to-top" href="#">
+            <svg class="cloudsipher-icon cloudsipher-icon-arrow-top">
+                <use xlink:href="#cloudsipher-icon-arrow-top"></use>
+            </svg>
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <span>Copyright © 2025 <a href="Autoscripts/html/index.html" class="sub-footer__link">Cloudsipher</a></span>
+                    <span>API Development Services by <a href="Autoscripts/html/index.html">Cloudsipher</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Used SVG-icons -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: block; width: 1px; height: 1px; visibility: hidden; opacity: 0;">
+    <symbol id="cloudsipher-icon-arrow-right" viewBox="0 0 512 512">
+        <path d="m293 256l211-209c10-10 10-26 0-36-10-10-27-10-37 0l-210 209-212-212c-10-10-27-10-37 0-10 10-10 26 0 36l212 212-212 212c-11 10-11 26 0 36 10 10 26 10 36 0l213-211 211 211c10 10 26 10 36 0 11-10 11-26 0-36z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-arrow-right1" viewBox="0 0 512 512">
+        <path d="m293 256l211-209c10-10 10-26 0-36-10-10-27-10-37 0l-210 209-212-212c-10-10-27-10-37 0-10 10-10 26 0 36l212 212-212 212c-11 10-11 26 0 36 10 10 26 10 36 0l213-211 211 211c10 10 26 10 36 0 11-10 11-26 0-36z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-arrow-right-1" viewBox="0 0 512 512">
+        <path d="m293 256l211-209c10-10 10-26 0-36-10-10-27-10-37 0l-210 209-212-212c-10-10-27-10-37 0-10 10-10 26 0 36l212 212-212 212c-11 10-11 26 0 36 10 10 26 10 36 0l213-211 211 211c10 10 26 10 36 0 11-10 11-26 0-36z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-arrow-top" viewBox="0 0 512 512">
+        <path d="m293 256l211-209c10-10 10-26 0-36-10-10-27-10-37 0l-210 209-212-212c-10-10-27-10-37 0-10 10-10 26 0 36l212 212-212 212c-11 10-11 26 0 36 10 10 26 10 36 0l213-211 211 211c10 10 26 10 36 0 11-10 11-26 0-36z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-checked" viewBox="0 0 512 512">
+        <path d="m450 240c-1-8-7-13-15-13-7 1-13 7-13 15 1 4 1 9 1 14 0 109-89 198-198 198-109 0-198-89-198-198 0-109 89-198 198-198 43 0 84 14 119 40 6 4 14 3 19-3 4-6 3-15-3-19-39-30-86-45-135-45-124 0-225 101-225 225 0 124 101 225 225 225 124 0 225-101 225-225 0-5 0-11 0-16z m46-178c-20-21-54-21-75 0l-197 197-70-70c-21-21-55-21-76 0-20 21-20 55 0 75l121 121c7 7 16 10 25 10 9 0 18-3 25-10l247-248c21-21 21-54 0-75z m-19 56l-248 247c-3 4-8 4-11 0l-120-120c-10-10-10-27 0-37 5-5 12-7 18-7 7 0 14 2 19 7l71 72c5 5 11 7 18 7 6 0 13-2 17-7l199-199c10-10 27-10 37 0 10 10 10 27 0 37z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-flag-1" viewBox="0 0 512 512">
+        <path d="m464 195l-93-81 93-81c6-5 9-13 6-21-3-7-10-12-18-12l-299 0c-10 0-19 8-19 19l0 356-19 0c-41 0-74 33-74 74l0 44c0 11 8 19 19 19l189 0c10 0 18-8 18-19 0-10-8-19-18-19l-170 0 0-25c0-20 16-36 36-36l76 0c13 0 26 7 32 19 5 9 17 12 26 7 9-5 12-17 7-26-13-23-38-38-65-38l-19 0 0-337 230 0-72 62c-5 4-7 9-7 14 0 6 3 11 7 14l72 63-168 0c-11 0-19 8-19 19 0 10 8 18 19 18l218 0c8 0 15-5 18-12 3-7 0-16-6-21z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-edit" viewBox="0 0 512 512">
+        <path d="m482 64l-34-34c-62-56-126-20-146 0l-279 280c-9 6-9 17-9 19l-14 160c2 24 23 23 23 23l165-12c6-1 10-3 13-7l281-283c40-40 40-106 0-146z m-290 378c-11-20-24-38-37-53l210-213 46 46z m99-339l44 43-211 212c-20-16-38-28-53-36z m-237 258c28 16 71 47 99 98l-108 9z m398-179l-11 11-120-121 11-11c12-11 52-34 86 0l34 34c23 25 23 63 0 87z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-expand" viewBox="0 0 512 512">
+        <path d="m146 270l94 95c7 8 22 9 31 0l94-95c9-9 9-22 0-30l-94-95c-9-9-22-9-31 0l-94 95c-9 8-9 21 0 30z m109-78l65 64-65 64-64-64z m120 125l-58 58c-8 8-8 21 0 30 5 4 17 12 31 0l57-58c9-8 9-21 0-30-8-9-21-9-30 0z m-239-123l58-58c8-8 8-21 0-30-9-9-22-9-31 0l-58 58c-8 8-8 22 0 30 10 9 23 8 31 0z m27 211c13 12 27 4 30 0 9-9 9-22 0-30l-57-58c-9-9-22-9-31 0-8 9-8 22 0 30z m212-211c13 12 26 4 30 0 9-9 9-22 0-30l-57-58c-9-9-22-9-31 0-8 9-8 22 0 30z m115-193l-468 0c-12 0-22 9-22 21l0 468c0 12 10 21 22 21l467 0c12 0 22-9 23-20l0-469c0-12-10-21-22-21z m-22 468l-426 0 0-426 426 0z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-telephone-keypad-with-ten-keys" viewBox="0 0 512 512">
+        <path d="M426.666,330.667c-22.912,0-45.824-3.529-67.637-10.516c-7.399-2.369-15.729-1.194-22.22,3.029l-42.88,34.133c-62.827-32.512-114.176-83.861-146.688-146.688l34.133-42.88c4.223-6.491,5.398-14.821,3.029-22.22c-6.987-21.813-10.516-44.725-10.516-67.637c0-11.782-9.551-21.333-21.333-21.333H85.333c-11.782,0-21.333,9.551-21.333,21.333c0,200.298,162.369,362.667,362.667,362.667c11.782,0,21.333-9.551,21.333-21.333v-67.221C448,340.218,438.449,330.667,426.666,330.667z" />
+    </symbol>
+    <symbol id="cloudsipher-icon-message-closed-envelope-1" viewBox="0 0 512 512">
+        <path d="M437.333,85.333H74.667c-23.564,0-42.667,19.103-42.667,42.667v256c0,23.564,19.103,42.667,42.667,42.667h362.667c23.564,0,42.667-19.103,42.667-42.667V128C480,104.436,460.897,85.333,437.333,85.333z M437.333,128L256,234.667L74.667,128H437.333z M437.333,384H74.667V170.667L256,277.333l181.333-106.667V384z" />
+    </symbol>
+</svg>
+
+<!-- jQuery first, then Other JS. -->
+<script src="Autoscripts/html/js/jquery-3.3.1.js"></script>
+
+<!-- jQuery-scripts for Template -->
+<script src="Autoscripts/html/js/js-plugins/crum-mega-menu.js"></script>
+<script src="Autoscripts/html/js/js-plugins/swiper.jquery.min.js"></script>
+<script src="Autoscripts/html/js/js-plugins/velocity.min.js"></script>
+<script src="Autoscripts/html/js/main.js"></script>
+<script src="Autoscripts/html/js/js-plugins/jquery.magnific-popup.js"></script>
+<script src="Autoscripts/html/modules/forms/src/js/jquery.validate.min.js"></script>
+<script src="Autoscripts/html/modules/forms/src/js/scripts.js"></script>
+
+<!-- Interactive API Demo Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for anchor links
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Interactive pricing hover effects
+    const pricingCards = document.querySelectorAll('.pricing-tables-item-standard');
+    pricingCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px)';
+            this.style.transition = 'all 0.3s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+
+    // Add interactive API endpoint demo
+    if (document.querySelector('.info-box--standard-hover')) {
+        const apiBoxes = document.querySelectorAll('.info-box--standard-hover');
+        apiBoxes.forEach((box, index) => {
+            box.addEventListener('click', function() {
+                const endpoints = [
+                    'GET /api/v1/users',
+                    'POST /api/v1/graphql',
+                    'GET /api/v1/health'
+                ];
+                
+                const responses = [
+                    '200 OK - Users retrieved successfully',
+                    '200 OK - GraphQL query executed',
+                    '200 OK - Service healthy'
+                ];
+                
+                // Create a simple demo notification
+                const notification = document.createElement('div');
+                notification.innerHTML = `
+                    <strong>${endpoints[index]}</strong><br>
+                    <span style="color: #01a23c;">${responses[index]}</span>
+                `;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: white;
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    z-index: 1000;
+                    border-left: 4px solid #0083ff;
+                    font-size: 14px;
+                    max-width: 300px;
+                `;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 3000);
+            });
+        });
+    }
+});
+</script>
+
 </body>
 </html>
