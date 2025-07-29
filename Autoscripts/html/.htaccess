@@ -1,9 +1,10 @@
 
 # Increase PHP memory limit
-php_value memory_limit 256M
+php_value memory_limit 512M
 php_value max_execution_time 300
 php_value upload_max_filesize 64M
 php_value post_max_size 64M
+php_value max_input_vars 3000
 
 # Enable compression
 <IfModule mod_deflate.c>
@@ -16,6 +17,7 @@ php_value post_max_size 64M
     AddOutputFilterByType DEFLATE application/rss+xml
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
 # Browser caching
@@ -26,4 +28,19 @@ php_value post_max_size 64M
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/jpg "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Optimize file handling
+<IfModule mod_headers.c>
+    # Remove ETags
+    Header unset ETag
+    FileETag None
+    
+    # Set cache headers
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
 </IfModule>
