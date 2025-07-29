@@ -1,21 +1,15 @@
 <?php
 
-return array(
-    'action' => 'http://localhost/crum.sensor.lab/modules/forms/submit.php',
-    'forms' => array(
-        'mailchimp' => array(
-            'inputs_allowed'   => array( 'email' ),
-            'inputs_required' => array( 'email' ),
-            'message_success' => 'You was successfully subscribed!',
-            'api_key' => 'ab84710546fc82519d48baa5b94a9d2a-us18',
-            'list_id' => 'c5c23a0e79'
-        ),
-        'standard'  => array(
-            'email'           => 'lorem@ipsum.dolor',
-            'email_subject'   => 'Mail from site',
-            'inputs_allowed'   => array( 'name', 'lastname', 'email', 'subject', 'message', 'site', 'company', 'password' ),
-            'inputs_required' => array( 'name', 'lastname', 'email', 'message', 'site' ),
-            'message_success' => 'Your message was successfully sent!',
-        )
-    )
-);
+return [
+    // Email settings
+    'email_to' => 'admin@example.com',
+    'email_from' => 'noreply@example.com',
+    'email_subject' => 'New Contact Form Submission',
+
+    // MailChimp settings (optional)
+    'mailchimp_api_key' => '',
+    'mailchimp_list_id' => '',
+
+    // Success message
+    'success_message' => 'Thank you for your message. We will get back to you soon!',
+];

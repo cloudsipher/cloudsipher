@@ -2,13 +2,13 @@ language = "php"
 
 modules = ["php-8.2"]
 
-run = "php -S 0.0.0.0:8080"
+run = "php -S 0.0.0.0:8080 -t Autoscripts/html"
 
 [nix]
 channel = "stable-25_05"
 
 [deployment]
-run = ["sh", "-c", "php -S 0.0.0.0:8080"]
+run = ["sh", "-c", "php -S 0.0.0.0:8080 -t Autoscripts/html"]
 
 [[ports]]
 localPort = 8080
