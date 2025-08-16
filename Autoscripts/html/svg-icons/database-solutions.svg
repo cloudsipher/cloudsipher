@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C27B0" />
+      <stop offset="100%" stop-color="#673AB7" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="32" cy="12" rx="20" ry="8" fill="url(#gradient1)" opacity="0.9"/>
+  <path d="M52,12 L52,28 C52,32.4 43.1,36 32,36 C20.9,36 12,32.4 12,28 L12,12" fill="none" stroke="url(#gradient1)" stroke-width="2"/>
+  <ellipse cx="32" cy="28" rx="20" ry="8" fill="url(#gradient1)" opacity="0.4"/>
+  <path d="M52,28 L52,44 C52,48.4 43.1,52 32,52 C20.9,52 12,48.4 12,44 L12,28" fill="none" stroke="url(#gradient1)" stroke-width="2"/>
+  <ellipse cx="32" cy="44" rx="20" ry="8" fill="url(#gradient1)" opacity="0.2"/>
+  
+  <!-- Data elements -->
+  <rect x="22" y="10" width="4" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  <rect x="28" y="10" width="8" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  <rect x="38" y="10" width="3" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  
+  <rect x="24" y="26" width="6" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  <rect x="32" y="26" width="4" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  <rect x="38" y="26" width="5" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  
+  <rect x="20" y="42" width="5" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  <rect x="27" y="42" width="7" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+  <rect x="36" y="42" width="4" height="1.5" rx="0.75" fill="white" opacity="0.7"/>
+</svg>

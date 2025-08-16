@@ -349,14 +349,28 @@ var CRUMINA = {};
 		});
 
 		//swiper arrows
-		$('.btn-prev').on('click', function () {
-			var current_id = $(this).closest('.crumina-module-slider').find('.swiper-container').attr('id');
-			swipers['swiper-' + current_id].slidePrev();
+		$('.btn-prev').on('click', function (e) {
+			var slider_container = $(this).closest('.crumina-module-slider');
+			if (slider_container.length > 0) {
+				e.preventDefault();
+				var current_id = slider_container.find('.swiper-container').attr('id');
+				var swiper_key = 'swiper-' + current_id;
+				if (swipers[swiper_key]) {
+					swipers[swiper_key].slidePrev();
+				}
+			}
 		});
 
-		$('.btn-next').on('click', function () {
-			var current_id = $(this).closest('.crumina-module-slider').find('.swiper-container').attr('id');
-			swipers['swiper-' + current_id].slideNext();
+		$('.btn-next').on('click', function (e) {
+			var slider_container = $(this).closest('.crumina-module-slider');
+			if (slider_container.length > 0) {
+				e.preventDefault();
+				var current_id = slider_container.find('.swiper-container').attr('id');
+				var swiper_key = 'swiper-' + current_id;
+				if (swipers[swiper_key]) {
+					swipers[swiper_key].slideNext();
+				}
+			}
 		});
 
 		//swiper tabs
@@ -366,7 +380,10 @@ var CRUMINA = {};
 			var current_id = $(this).closest('.crumina-module-slider').find('.swiper-container').attr('id');
 			if ($(this).hasClass('slide-active')) return false;
 			var activeIndex = $(this).parent().find('.slides-item').index(this);
-			swipers['swiper-' + current_id].slideTo(activeIndex + 1);
+			var swiper_key = 'swiper-' + current_id;
+			if (swipers[swiper_key]) {
+				swipers[swiper_key].slideTo(activeIndex + 1);
+			}
 			$(this).parent().find('.slide-active').removeClass('slide-active');
 			$(this).addClass('slide-active');
 
@@ -626,7 +643,8 @@ var CRUMINA = {};
 			animation: "drop-up",
 			effect: "fade",
 			indicatorFirstLevel: "&#xf0d7",
-			indicatorSecondLevel: "&#xf105"
+			indicatorSecondLevel: "&#xf105",
+			responsive: false
 		});
 
 		CRUMINA.fixedHeader();

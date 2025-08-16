@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0" />
+      <stop offset="100%" stop-color="#0D47A1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Server/On-premise -->
+  <rect x="8" y="36" width="16" height="20" rx="1" ry="1" fill="#f5f5f5" stroke="#ddd" stroke-width="1.5"/>
+  <line x1="8" y1="40" x2="24" y2="40" stroke="#ddd" stroke-width="1"/>
+  <line x1="8" y1="44" x2="24" y2="44" stroke="#ddd" stroke-width="1"/>
+  <line x1="8" y1="48" x2="24" y2="48" stroke="#ddd" stroke-width="1"/>
+  <line x1="8" y1="52" x2="24" y2="52" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Cloud -->
+  <path d="M48,20 C53.5,20 58,24.5 58,30 C58,35.5 53.5,40 48,40 L40,40 C35.6,40 32,36.4 32,32 C32,27.6 35.6,24 40,24 C40,16.3 46.3,10 54,10 C54.7,10 55.3,10.1 56,10.2 C52.4,12.4 50,16.4 50,21 L52,21 C52,16.6 55.6,13 60,13 L60,14 C56.1,14 53,17.1 53,21 L54,21 C54,17.7 56.7,15 60,15 L60,16 C57.2,16 55,18.2 55,21 L56,21 C56,18.8 57.8,17 60,17 L60,30 C60,35.5 55.5,40 50,40 L48,40" fill="url(#gradient1)" opacity="0.8"/>
+  
+  <!-- Migration Arrow -->
+  <path d="M24,46 L40,32" fill="none" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="2,2"/>
+  <polygon points="36,28 44,32 36,36" fill="url(#gradient1)"/>
+  
+  <!-- Data Symbols -->
+  <rect x="12" y="38" width="2" height="1" fill="#666"/>
+  <rect x="15" y="38" width="3" height="1" fill="#666"/>
+  <rect x="19" y="38" width="2" height="1" fill="#666"/>
+  
+  <rect x="12" y="42" width="3" height="1" fill="#666"/>
+  <rect x="16" y="42" width="2" height="1" fill="#666"/>
+  <rect x="19" y="42" width="3" height="1" fill="#666"/>
+  
+  <rect x="12" y="46" width="2" height="1" fill="#666"/>
+  <rect x="15" y="46" width="4" height="1" fill="#666"/>
+  <rect x="20" y="46" width="2" height="1" fill="#666"/>
+  
+  <rect x="12" y="50" width="3" height="1" fill="#666"/>
+  <rect x="16" y="50" width="3" height="1" fill="#666"/>
+  <rect x="20" y="50" width="2" height="1" fill="#666"/>
+  
+  <!-- Small Devices -->
+  <rect x="6" y="28" width="4" height="6" rx="0.5" ry="0.5" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
+  <rect x="12" y="30" width="6" height="4" rx="0.5" ry="0.5" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
+  <rect x="20" y="28" width="5" height="6" rx="0.5" ry="0.5" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
+</svg>

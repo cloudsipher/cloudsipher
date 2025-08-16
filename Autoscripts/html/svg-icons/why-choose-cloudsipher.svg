@@ -1,0 +1,124 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f9fc" stop-opacity="1" />
+      <stop offset="100%" stop-color="#e6ecf5" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a73dd" stop-opacity="1" />
+      <stop offset="100%" stop-color="#0e4094" stop-opacity="1" />
+    </linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="800" height="400" rx="15" ry="15" fill="url(#bg-gradient)" />
+  
+  <!-- Abstract pattern -->
+  <g opacity="0.1" stroke="#2a73dd" stroke-width="1">
+    <!-- Hexagon pattern -->
+    <path d="M100,100 L150,75 L200,100 L200,150 L150,175 L100,150 Z" fill="none" stroke="#2a73dd" />
+    <path d="M200,100 L250,75 L300,100 L300,150 L250,175 L200,150 Z" fill="none" stroke="#2a73dd" />
+    <path d="M300,100 L350,75 L400,100 L400,150 L350,175 L300,150 Z" fill="none" stroke="#2a73dd" />
+    <path d="M400,100 L450,75 L500,100 L500,150 L450,175 L400,150 Z" fill="none" stroke="#2a73dd" />
+    <path d="M500,100 L550,75 L600,100 L600,150 L550,175 L500,150 Z" fill="none" stroke="#2a73dd" />
+    <path d="M600,100 L650,75 L700,100 L700,150 L650,175 L600,150 Z" fill="none" stroke="#2a73dd" />
+    
+    <path d="M150,175 L200,150 L250,175 L250,225 L200,250 L150,225 Z" fill="none" stroke="#2a73dd" />
+    <path d="M250,175 L300,150 L350,175 L350,225 L300,250 L250,225 Z" fill="none" stroke="#2a73dd" />
+    <path d="M350,175 L400,150 L450,175 L450,225 L400,250 L350,225 Z" fill="none" stroke="#2a73dd" />
+    <path d="M450,175 L500,150 L550,175 L550,225 L500,250 L450,225 Z" fill="none" stroke="#2a73dd" />
+    <path d="M550,175 L600,150 L650,175 L650,225 L600,250 L550,225 Z" fill="none" stroke="#2a73dd" />
+    
+    <path d="M100,250 L150,225 L200,250 L200,300 L150,325 L100,300 Z" fill="none" stroke="#2a73dd" />
+    <path d="M200,250 L250,225 L300,250 L300,300 L250,325 L200,300 Z" fill="none" stroke="#2a73dd" />
+    <path d="M300,250 L350,225 L400,250 L400,300 L350,325 L300,300 Z" fill="none" stroke="#2a73dd" />
+    <path d="M400,250 L450,225 L500,250 L500,300 L450,325 L400,300 Z" fill="none" stroke="#2a73dd" />
+    <path d="M500,250 L550,225 L600,250 L600,300 L550,325 L500,300 Z" fill="none" stroke="#2a73dd" />
+    <path d="M600,250 L650,225 L700,250 L700,300 L650,325 L600,300 Z" fill="none" stroke="#2a73dd" />
+  </g>
+  
+  <!-- Main content -->
+  <g transform="translate(400, 200)">
+    <!-- Central badge -->
+    <circle cx="0" cy="0" r="120" fill="#ffffff" filter="url(#drop-shadow)" />
+    <circle cx="0" cy="0" r="110" fill="#ffffff" stroke="url(#accent-gradient)" stroke-width="2" />
+    
+    <!-- Cloudsipher logo/icon -->
+    <g transform="translate(0, -40) scale(0.8)">
+      <!-- Cloud shape -->
+      <path d="M-60,20 C-80,20 -80,-20 -60,-20 C-60,-40 -40,-50 -20,-30 C0,-50 40,-50 60,-30 C80,-50 100,-40 100,-20 C120,-20 120,20 100,20 Z" 
+            fill="url(#accent-gradient)" />
+      <!-- Lock/security icon in center -->
+      <rect x="-15" y="-10" width="30" height="25" rx="5" ry="5" fill="#ffffff" />
+      <rect x="-10" y="-20" width="20" height="15" rx="10" ry="10" fill="#ffffff" />
+      <circle cx="0" cy="0" r="5" fill="url(#accent-gradient)" />
+      <rect x="-2" y="0" width="4" height="8" fill="url(#accent-gradient)" />
+    </g>
+    
+    <!-- Text "Why Choose" -->
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">
+      Why Choose
+    </text>
+    
+    <!-- Text "Cloudsipher" -->
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="url(#accent-gradient)">
+      Cloudsipher
+    </text>
+  </g>
+  
+  <!-- Feature icons -->
+  <!-- Modern Technology -->
+  <g transform="translate(150, 200)">
+    <circle cx="0" cy="0" r="50" fill="#ffffff" filter="url(#drop-shadow)" />
+    <g transform="translate(0, 0) scale(0.5)">
+      <rect x="-30" y="-30" width="60" height="60" rx="5" ry="5" fill="url(#accent-gradient)" />
+      <text x="0" y="10" font-family="monospace" font-size="30" font-weight="bold" text-anchor="middle" fill="#ffffff">&lt;/&gt;</text>
+    </g>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">
+      Modern Technology
+    </text>
+  </g>
+  
+  <!-- Agile Process -->
+  <g transform="translate(650, 200)">
+    <circle cx="0" cy="0" r="50" fill="#ffffff" filter="url(#drop-shadow)" />
+    <g transform="translate(0, 0) scale(0.5)">
+      <circle cx="0" cy="0" r="30" fill="url(#accent-gradient)" />
+      <!-- Circular arrows representing agile -->
+      <path d="M0,-20 A20,20 0 0,1 17,10 L10,0 L20,-5 L17,10 Z" fill="#ffffff" />
+      <path d="M17,10 A20,20 0 0,1 -17,10 L-10,0 L-5,15 L-17,10 Z" fill="#ffffff" />
+      <path d="M-17,10 A20,20 0 0,1 0,-20 L0,-10 L-15,-15 L0,-20 Z" fill="#ffffff" />
+    </g>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">
+      Agile Process
+    </text>
+  </g>
+  
+  <!-- 24/7 Support -->
+  <g transform="translate(400, 350)">
+    <circle cx="0" cy="0" r="50" fill="#ffffff" filter="url(#drop-shadow)" />
+    <g transform="translate(0, 0) scale(0.5)">
+      <circle cx="0" cy="0" r="30" fill="url(#accent-gradient)" />
+      <!-- Clock hands -->
+      <line x1="0" y1="0" x2="0" y2="-20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <line x1="0" y1="0" x2="15" y2="10" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <!-- 24/7 text -->
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">24/7</text>
+    </g>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333333">
+      24/7 Support
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a73dd" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0e4094" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="glow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="800" height="400" rx="15" ry="15" fill="url(#bg-gradient)" />
+  
+  <!-- Abstract network pattern -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="1.5">
+    <!-- Connection lines -->
+    <line x1="100" y1="100" x2="300" y2="150" />
+    <line x1="300" y1="150" x2="500" y2="120" />
+    <line x1="500" y1="120" x2="700" y2="180" />
+    <line x1="100" y1="100" x2="150" y2="250" />
+    <line x1="300" y1="150" x2="250" y2="300" />
+    <line x1="500" y1="120" x2="450" y2="280" />
+    <line x1="700" y1="180" x2="650" y2="320" />
+    <line x1="150" y1="250" x2="250" y2="300" />
+    <line x1="250" y1="300" x2="450" y2="280" />
+    <line x1="450" y1="280" x2="650" y2="320" />
+    
+    <!-- Connection nodes -->
+    <circle cx="100" cy="100" r="8" fill="#ffffff" />
+    <circle cx="300" cy="150" r="8" fill="#ffffff" />
+    <circle cx="500" cy="120" r="8" fill="#ffffff" />
+    <circle cx="700" cy="180" r="8" fill="#ffffff" />
+    <circle cx="150" cy="250" r="8" fill="#ffffff" />
+    <circle cx="250" cy="300" r="8" fill="#ffffff" />
+    <circle cx="450" cy="280" r="8" fill="#ffffff" />
+    <circle cx="650" cy="320" r="8" fill="#ffffff" />
+  </g>
+  
+  <!-- Cloud icon -->
+  <g transform="translate(150, 150) scale(0.8)">
+    <path d="M25,130 C-10,130 -10,70 25,70 C25,40 60,20 95,45 C120,5 190,5 215,45 C250,20 285,40 285,70 C320,70 320,130 285,130 Z" 
+          fill="#ffffff" opacity="0.2" stroke="#ffffff" stroke-width="2" />
+  </g>
+  
+  <!-- Server icon -->
+  <g transform="translate(500, 150) scale(0.8)">
+    <rect x="0" y="0" width="120" height="160" rx="5" ry="5" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.2" />
+    <line x1="0" y1="40" x2="120" y2="40" stroke="#ffffff" stroke-width="2" opacity="0.2" />
+    <line x1="0" y1="80" x2="120" y2="80" stroke="#ffffff" stroke-width="2" opacity="0.2" />
+    <line x1="0" y1="120" x2="120" y2="120" stroke="#ffffff" stroke-width="2" opacity="0.2" />
+    <circle cx="60" cy="20" r="10" fill="#ffffff" opacity="0.2" />
+    <circle cx="60" cy="60" r="10" fill="#ffffff" opacity="0.2" />
+    <circle cx="60" cy="100" r="10" fill="#ffffff" opacity="0.2" />
+    <circle cx="60" cy="140" r="10" fill="#ffffff" opacity="0.2" />
+  </g>
+  
+  <!-- Code brackets -->
+  <g transform="translate(350, 220) scale(0.8)">
+    <path d="M0,0 L-30,30 L0,60" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.2" />
+    <path d="M60,0 L90,30 L60,60" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.2" />
+  </g>
+  
+  <!-- Glow effect in center -->
+  <circle cx="400" cy="200" r="100" fill="url(#glow-gradient)" opacity="0.1" />
+  
+  <!-- Title text -->
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Comprehensive IT Solutions
+  </text>
+  
+  <!-- Subtitle/description -->
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" opacity="0.9">
+    End-to-end software development and IT consulting services
+  </text>
+  
+  <!-- Service icons with labels -->
+  <g transform="translate(200, 150)">
+    <!-- Web icon -->
+    <rect x="-20" y="-20" width="40" height="40" rx="5" ry="5" fill="#ffffff" opacity="0.2" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff">Web</text>
+  </g>
+  
+  <g transform="translate(300, 150)">
+    <!-- Cloud icon -->
+    <circle cx="0" cy="0" r="20" fill="#ffffff" opacity="0.2" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff">Cloud</text>
+  </g>
+  
+  <g transform="translate(400, 150)">
+    <!-- DevOps icon -->
+    <polygon points="0,-20 17,10 -17,10" fill="#ffffff" opacity="0.2" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff">DevOps</text>
+  </g>
+  
+  <g transform="translate(500, 150)">
+    <!-- Database icon -->
+    <ellipse cx="0" cy="-10" rx="20" ry="10" fill="#ffffff" opacity="0.2" />
+    <path d="M-20,-10 L-20,10 C-20,20 20,20 20,10 L20,-10" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.2" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff">Database</text>
+  </g>
+  
+  <g transform="translate(600, 150)">
+    <!-- Security icon -->
+    <rect x="-15" y="-20" width="30" height="40" rx="5" ry="5" fill="#ffffff" opacity="0.2" />
+    <circle cx="0" cy="-5" r="5" fill="#2a73dd" />
+    <rect x="-2" y="-5" width="4" height="15" fill="#2a73dd" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ffffff">Security</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Debug Test</title>
+    <link rel="stylesheet" type="text/css" href="css/theme-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-navigation-fix.css">
+</head>
+<body>
+    <div class="header">
+        <nav id="primary-menu" class="primary-menu">
+            <ul class="primary-menu-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">SERVICES</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">TESTIMONIALS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/js-plugins/jquery.min.js"></script>
+    <script src="js/js-plugins/crum-mega-menu.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('Before initialization:');
+            console.log('Menu classes:', $('#primary-menu').attr('class'));
+            
+            $('#primary-menu').crumegamenu({
+                showSpeed: 0,
+                hideSpeed: 0,
+                trigger: "hover",
+                animation: "drop-up",
+                effect: "fade",
+                indicatorFirstLevel: "&#xf0d7",
+                indicatorSecondLevel: "&#xf105",
+                responsive: false
+            });
+            
+            console.log('After initialization:');
+            console.log('Menu classes:', $('#primary-menu').attr('class'));
+            console.log('Has responsive class:', $('#primary-menu').hasClass('primary-menu-responsive'));
+        });
+    </script>
+</body>
+</html>

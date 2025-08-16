@@ -65,8 +65,30 @@
                 <ul class="primary-menu-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="02_company.html">Company</a></li>
-                    <li><a href="03_products.html">Services</a></li>
-                    <li><a href="18_contacts.html">Contact</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="web_development.html">Web Development</a></li>
+                            <li><a href="software_development.html">Software Development</a></li>
+                            <li><a href="mobile_app_development.html">Mobile App Development</a></li>
+                            <li><a href="api_development.html">API Development</a></li>
+                            <li><a href="database_solutions.html">Database Solutions</a></li>
+                            <li><a href="devops_automation.html">DevOps & Automation</a></li>
+                            <li><a href="cloud_migration.html">Cloud Migration</a></li>
+                            <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                            <li><a href="infrastructure_services.html">Infrastructure Services</a></li>
+                            <li><a href="digital_transformation.html">Digital Transformation</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <!-- Search -->
+                    <li class="nav-search nav-add">
+                        <svg class="cloudsipher-icon cloudsipher-icon-search cd-nav-trigger">
+                            <use xlink:href="#cloudsipher-icon-search"></use>
+                        </svg>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -552,6 +574,13 @@
 <script src="modules/forms/src/js/scripts.js"></script>
 <script src="js/js-plugins/jquery-countTo.js"></script>
 <script src="js/js-plugins/waypoints.js"></script>
+
+<!-- SVG Icons -->
+<svg style="display: none;">
+    <symbol id="cloudsipher-icon-search" viewBox="0 0 512 512">
+        <path d="m344 280c0-48-40-88-88-88-48 0-88 40-88 88 0 48 40 88 88 88 48 0 88-40 88-88z m168 152l-120-120c28-36 44-80 44-128 0-115-93-208-208-208-115 0-208 93-208 208 0 115 93 208 208 208 48 0 92-16 128-44l120 120c8 8 24 8 32 0l4-4c8-8 8-24 0-32z m-168-120c0 75-61 136-136 136-75 0-136-61-136-136 0-75 61-136 136-136 75 0 136 61 136 136z"/>
+    </symbol>
+</svg>
 
 </body>
 </html>

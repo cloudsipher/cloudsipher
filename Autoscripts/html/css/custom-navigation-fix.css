@@ -1,0 +1,105 @@
+/* Custom CSS to force horizontal navigation layout */
+/* Override all responsive styles to ensure horizontal menu display */
+
+/* Force horizontal layout for all screen sizes */
+@media (min-width: 1px) {
+    .primary-menu .primary-menu-menu > li {
+        position: relative !important;
+        padding: 55px 9px !important;
+        float: left !important;
+        width: auto !important;
+        border-bottom: none !important;
+    }
+    
+    .primary-menu .primary-menu-menu > li > a {
+        display: inline-block !important;
+        width: auto !important;
+        padding: 0 !important;
+        border-bottom: none !important;
+        background: transparent !important;
+    }
+    
+    .primary-menu .primary-menu-menu {
+        width: auto !important;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        display: block !important;
+    }
+    
+    /* Ensure dropdowns work properly */
+    .primary-menu .primary-menu-menu ul.sub-menu {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 250px !important;
+        background: #fff !important;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+        border-radius: 5px !important;
+        display: none !important;
+    }
+    
+    .primary-menu .primary-menu-menu > li:hover ul.sub-menu {
+        display: block !important;
+    }
+    
+    /* Override responsive styles even when class is present */
+    .primary-menu-responsive .primary-menu-menu > li {
+        display: inline-block !important;
+        width: auto !important;
+        float: left !important;
+        padding: 55px 9px !important;
+        border-bottom: none !important;
+    }
+    
+    .primary-menu-responsive .primary-menu-menu > li > a {
+        display: inline-block !important;
+        width: auto !important;
+        padding: 0 !important;
+        border-bottom: none !important;
+        background: transparent !important;
+    }
+    
+    .primary-menu-responsive .primary-menu-menu {
+        width: auto !important;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+    
+    /* Fix search icon alignment with mega menu */
+    .primary-menu {
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .nav-add {
+        display: flex !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 20px !important;
+    }
+    
+    .nav-add li {
+        display: flex !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 55px 9px !important;
+    }
+    
+    .nav-add li a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .nav-add li .cloudsipher-icon {
+        position: static !important;
+        top: auto !important;
+    }
+}
