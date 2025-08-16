@@ -76,30 +76,31 @@
     }
     
     .nav-add {
-        display: flex !important;
-        align-items: center !important;
+        display: inline-block !important;
         margin: 0 !important;
-        padding: 0 !important;
-        margin-left: 20px !important;
+        padding-left: 39px !important;
+        vertical-align: middle !important;
     }
     
     .nav-add li {
-        display: flex !important;
-        align-items: center !important;
-        margin: 0 !important;
-        padding: 55px 9px !important;
+        display: inline-block !important;
     }
     
     .nav-add li a {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        padding: 0 !important;
-        margin: 0 !important;
+        padding: 2px !important;
     }
     
-    .nav-add li .cloudsipher-icon {
-        position: static !important;
-        top: auto !important;
+    .nav-add .cloudsipher-icon {
+        width: 28px !important;
+        height: 28px !important;
+        fill: #6987ab !important;
+        transition: all .3s ease !important;
+    }
+    
+    .nav-add:hover .cloudsipher-icon {
+        fill: #0083ff !important;
     }
 }
